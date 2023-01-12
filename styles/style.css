@@ -64,17 +64,22 @@ nav ul li a {
 
 .bannerSubTitle {
     font-weight: 600;
-    font-size: 45px;
-    line-height: 60px;
+    font-size: 3em;
+    line-height: 3rem;
     color: #474747;
     margin-bottom: 5px;
 }
 
+.header .banner img {
+    width: 100%;
+    object-fit: cover;
+}
+
 .bannerTitle {
     font-weight: 700;
-    font-size: 85px;
-    line-height: 115px;
-    margin-bottom: 20px;
+    font-size: 5em;
+    line-height: 1.2em;
+    margin-bottom: 0.5rem;
 }
 
 .bannerParagraph {
@@ -265,4 +270,137 @@ footer .contact-container {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+/* Responsive styles */
+@media screen and (max-width: 576px) {
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .resume-container {
+        flex-direction: column;
+        padding: 2rem;
+        gap: 8rem;
+    }
+
+    .about-me {
+        padding: 130px 40px;
+    }
+
+    .sectionDescription {
+        margin-bottom: 3rem;
+    }
+
+    .about-info-container {
+        flex-direction: column;
+        gap: 2rem;
+        font-size: 1.2rem;
+    }
+
+    footer .contact-container {
+        flex-direction: column;
+        padding: 50px;
+    }
+
+    .form-area {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .form-area input {
+        width: 250px;
+    }
+
+    .form-area textarea {
+        width: 250px; 
+    }
+
+    .contact-container .contact-title {
+        margin-bottom: 15px;
+        font-size: 24px;
+    }
+
+    .header {
+        background-image: url('../images/header_bg.png');
+    }
+
+    .header .banner {
+        flex-direction: column;
+        gap: 2rem;
+        margin: 50px;
+    }
+
+    .header .banner img {
+        width: 300px;
+    }
+
+    .bannerTitle {
+        font-size: 3em;
+    }
+
+    .bannerSubTitle {
+        font-size: 2em;
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 50px 160px;
+    }
+
+    .btn-primary {
+        font-size: 18px;
+        line-height: 20px;
+        padding: 10px 30px;
+    }
+
+    nav ul li {
+        margin-left: 25px;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .skills-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .resume-container {
+        padding: 2rem;
+    }
+
+    .sectionDescription {
+        margin-bottom: 3rem;
+    }
+
+    .about-me {
+        padding: 130px 40px;
+    }
+
+    .about-info-container {
+        gap: 1.2rem;
+        font-size: 12px;
+    }
+
+    footer .contact-container {
+        flex-direction: column;
+        padding: 50px;
+    }
+
+    .header {
+        background-image: url('../images/header_bg.png');
+    }
+
+    .banner {
+        margin: 0 50px;
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+    }
 }
